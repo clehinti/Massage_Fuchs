@@ -26,9 +26,9 @@ namespace Massage_Fuchs.UserControls
             InitializeComponent();
             loaddb();
         }
+
         void loaddb()
         {
-
             con.Open();
             cmd.Connection = con;
 
@@ -40,6 +40,7 @@ namespace Massage_Fuchs.UserControls
             con.Close();
             dtgrd.DataSource = dt;
         }
+
         private void btnAddNewBooks_Click(object sender, EventArgs e)
         {
             try
@@ -60,21 +61,6 @@ namespace Massage_Fuchs.UserControls
                 con.Close();
             }
             loaddb();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void UC_PurchaseDetails_Load(object sender, EventArgs e)

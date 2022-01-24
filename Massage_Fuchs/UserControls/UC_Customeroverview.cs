@@ -40,15 +40,5 @@ namespace Massage_Fuchs.UserControls
             con.Close();
             gridcst.DataSource = dt;
         }
-
-        private void gridcst_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void UC_Customeroverview_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

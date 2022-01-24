@@ -61,7 +61,7 @@
             this.gridcst.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridcst.Size = new System.Drawing.Size(965, 521);
             this.gridcst.TabIndex = 0;
-            this.gridcst.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridcst_CellContentClick);
+           
             // 
             // label4
             // 
@@ -96,8 +96,7 @@
             this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UC_Customeroverview";
-            this.Size = new System.Drawing.Size(985, 580);
-            this.Load += new System.EventHandler(this.UC_Customeroverview_Load);
+            this.Size = new System.Drawing.Size(985, 580);        
             ((System.ComponentModel.ISupportInitialize)(this.gridcst)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();

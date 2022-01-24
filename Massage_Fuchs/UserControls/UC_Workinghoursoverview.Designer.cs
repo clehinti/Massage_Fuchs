@@ -94,7 +94,7 @@
             this.btnSearch.Text = "Search";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            
             // 
             // label2
             // 
@@ -157,7 +157,6 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.Name = "UC_Workinghoursoverview";
             this.Size = new System.Drawing.Size(985, 580);
-            this.Load += new System.EventHandler(this.UC_Sales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridvw)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

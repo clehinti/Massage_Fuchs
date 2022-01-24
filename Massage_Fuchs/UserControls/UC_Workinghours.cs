@@ -40,7 +40,6 @@ namespace Massage_Fuchs.UserControls
         {
             timer1.Stop();
             isActive = false;
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -61,12 +60,10 @@ namespace Massage_Fuchs.UserControls
                             timeHr++;
                             timeMin = 0;
                         }
-
                     }
-
                 }
             }
-            DrowTime();
+            Time();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -74,13 +71,11 @@ namespace Massage_Fuchs.UserControls
 
         }
 
-        private void DrowTime()
+        private void Time()
         {
-            txtS.Text = String.Format("{0:00}", timeSec);
-            txtmin.Text = String.Format("{0:00}", timeMin);
-            txtH.Text = String.Format("{0:00}", timeHr);
-
-
+            txt_sec.Text = String.Format("{0:00}", timeSec);
+            txt_min.Text = String.Format("{0:00}", timeMin);
+            txt_hours.Text = String.Format("{0:00}", timeHr);
         }
 
         private void UC_ManageExpense_Load(object sender, EventArgs e)
@@ -89,20 +84,14 @@ namespace Massage_Fuchs.UserControls
             labelTime.Text = dt.ToString("yyyy-MM-dd");
         }
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         void db()
         {
             try
             {
-
-                string Working = txtH.Text + ":" + txtmin.Text + ":" + txtS.Text;
+                string Working = txt_hours.Text + ":" + txt_min.Text + ":" + txt_sec.Text;
                 con.Open();
                 sqlQuery = "insert into Working (Working,date,s,m,h)" +
-                "values('" + Working + "', '" + labelTime.Text + "','" + txtS.Text + "','" + txtmin.Text + "','" + txtH.Text + "')";
+                "values('" + Working + "', '" + labelTime.Text + "','" + txt_sec.Text + "','" + txt_min.Text + "','" + txt_hours.Text + "')";
 
                 cmd = new MySqlCommand(sqlQuery, con);
                 reader = cmd.ExecuteReader();
@@ -130,9 +119,9 @@ namespace Massage_Fuchs.UserControls
         {
             timer1.Stop();
             timeSec = timeMin = timeHr = 0;
-            txtS.Text = "00";
-            txtmin.Text = "00";
-            txtH.Text = "00";
+            txt_sec.Text = "00";
+            txt_min.Text = "00";
+            txt_hours.Text = "00";
         }
     }
 }

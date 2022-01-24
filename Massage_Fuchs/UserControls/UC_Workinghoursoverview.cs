@@ -25,13 +25,8 @@ namespace Massage_Fuchs.UserControls
             InitializeComponent();
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
         void loaddb()
         {
-
             con.Open();
             cmd.Connection = con;
 
@@ -43,7 +38,7 @@ namespace Massage_Fuchs.UserControls
             con.Close();
             gridvw.DataSource = dt;
         }
-        private void UC_Sales_Load(object sender, EventArgs e)
+        private void UC_whoverview_Load(object sender, EventArgs e)
         {
             loaddb();
             dgvsalvisible();
@@ -52,29 +47,10 @@ namespace Massage_Fuchs.UserControls
 
         void dgvsalvisible()
         {
-
             gridvw.Columns[3].Visible = false;
-
             gridvw.Columns[4].Visible = false;
             gridvw.Columns[5].Visible = false;
         }
-        public void between()
-        {           
 
-        }
-
-        public void CalcTotalValueAdd()
-        {           
-          
-        }
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-                   
-        }
-
-        private void txtTotal1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -99,8 +99,7 @@
             this.btnSettings.Text = "       Kalender";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.button7_Click);
+            this.btnSettings.UseVisualStyleBackColor = true;          
             // 
             // btnViewSales
             // 
@@ -291,7 +290,7 @@
             this.labelTime.Size = new System.Drawing.Size(83, 19);
             this.labelTime.TabIndex = 0;
             this.labelTime.Text = "HH:MM:SS";
-            this.labelTime.Click += new System.EventHandler(this.labelTime_Click);
+           
             // 
             // label5
             // 
@@ -351,8 +350,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Dashboard";
             this.Text = "Form_Dashboard";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form_Dashboard_Load);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;          
             this.panelLeft.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

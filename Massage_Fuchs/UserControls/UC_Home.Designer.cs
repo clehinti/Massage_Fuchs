@@ -40,7 +40,7 @@
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.labelTime.Location = new System.Drawing.Point(326, 216);
+            this.labelTime.Location = new System.Drawing.Point(283, 209);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(339, 77);
             this.labelTime.TabIndex = 1;

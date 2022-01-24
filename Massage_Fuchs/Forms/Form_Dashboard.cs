@@ -32,11 +32,6 @@ namespace Massage_Fuchs.Forms
             this.Close();
         }
 
-        private void Form_Dashboard_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (isCollapsed)
@@ -118,20 +113,10 @@ namespace Massage_Fuchs.Forms
             AddControlsToPanel(vs);
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void timerTime_Tick(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
             labelTime.Text = dt.ToString("HH:MM:ss");
-        }
-
-        private void labelTime_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_minimize_Click(object sender, EventArgs e)

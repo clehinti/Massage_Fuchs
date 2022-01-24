@@ -20,7 +20,6 @@ namespace Massage_Fuchs.UserControls
         private void UC_Home_Load(object sender, EventArgs e)
         {
             timerTime.Start();
-
         }
 
         private void timerTime_Tick(object sender, EventArgs e)

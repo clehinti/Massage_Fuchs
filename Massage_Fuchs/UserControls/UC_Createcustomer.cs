@@ -17,7 +17,6 @@ namespace Massage_Fuchs.UserControls
         MySqlCommand cmd = new MySqlCommand();
         string sqlQuery;
         MySqlDataReader reader;
-
         DataSet DS = new DataSet();
 
 
@@ -54,10 +53,6 @@ namespace Massage_Fuchs.UserControls
             clear();
         }
 
-        private void UC_ManageUser_Load(object sender, EventArgs e)
-        {
-
-        }
         void clear()
         {
             txtAdresse.Clear();
@@ -68,11 +63,6 @@ namespace Massage_Fuchs.UserControls
         private void btnclear_Click(object sender, EventArgs e)
         {
             clear();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

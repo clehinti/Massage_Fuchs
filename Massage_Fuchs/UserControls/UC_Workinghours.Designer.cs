@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnStop = new System.Windows.Forms.Button();
-            this.btnStart = new System.Windows.Forms.Button();
+            this.btn_reset = new System.Windows.Forms.Button();
+            this.btn_stop = new System.Windows.Forms.Button();
+            this.btn_start = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.labelTime = new System.Windows.Forms.Label();
-            this.txtS = new System.Windows.Forms.TextBox();
+            this.txt_sec = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtmin = new System.Windows.Forms.TextBox();
+            this.txt_min = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtH = new System.Windows.Forms.TextBox();
+            this.txt_hours = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.labelTime = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -49,159 +49,154 @@
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel5.Controls.Add(this.btnReset);
-            this.panel5.Controls.Add(this.btnStop);
-            this.panel5.Controls.Add(this.btnStart);
+            this.panel5.Controls.Add(this.btn_reset);
+            this.panel5.Controls.Add(this.btn_stop);
+            this.panel5.Controls.Add(this.btn_start);
             this.panel5.Location = new System.Drawing.Point(350, 190);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(354, 67);
             this.panel5.TabIndex = 9;
             // 
-            // btnReset
+            // btn_reset
             // 
-            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btn_reset.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.FlatAppearance.BorderSize = 0;
-            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(228, 0);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(126, 67);
-            this.btnReset.TabIndex = 5;
-            this.btnReset.Text = "End";
-            this.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btn_reset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_reset.FlatAppearance.BorderSize = 0;
+            this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_reset.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reset.ForeColor = System.Drawing.Color.White;
+            this.btn_reset.Location = new System.Drawing.Point(228, 0);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(126, 67);
+            this.btn_reset.TabIndex = 5;
+            this.btn_reset.Text = "Beenden";
+            this.btn_reset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // btnStop
+            // btn_stop
             // 
-            this.btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btn_stop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStop.BackColor = System.Drawing.Color.Red;
-            this.btnStop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStop.FlatAppearance.BorderSize = 0;
-            this.btnStop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStop.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStop.ForeColor = System.Drawing.Color.White;
-            this.btnStop.Location = new System.Drawing.Point(104, 0);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(124, 67);
-            this.btnStop.TabIndex = 1;
-            this.btnStop.Text = "Pause";
-            this.btnStop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnStop.UseVisualStyleBackColor = false;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            this.btn_stop.BackColor = System.Drawing.Color.Red;
+            this.btn_stop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_stop.FlatAppearance.BorderSize = 0;
+            this.btn_stop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btn_stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_stop.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_stop.ForeColor = System.Drawing.Color.White;
+            this.btn_stop.Location = new System.Drawing.Point(104, 0);
+            this.btn_stop.Name = "btn_stop";
+            this.btn_stop.Size = new System.Drawing.Size(124, 67);
+            this.btn_stop.TabIndex = 1;
+            this.btn_stop.Text = "Pause";
+            this.btn_stop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_stop.UseVisualStyleBackColor = false;
+            this.btn_stop.Click += new System.EventHandler(this.btnStop_Click);
             // 
-            // btnStart
+            // btn_start
             // 
-            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btn_start.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStart.FlatAppearance.BorderSize = 0;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.Location = new System.Drawing.Point(0, 0);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(104, 67);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
-            this.btnStart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnStart.UseVisualStyleBackColor = false;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.btn_start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_start.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_start.FlatAppearance.BorderSize = 0;
+            this.btn_start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_start.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_start.ForeColor = System.Drawing.Color.White;
+            this.btn_start.Location = new System.Drawing.Point(0, 0);
+            this.btn_start.Name = "btn_start";
+            this.btn_start.Size = new System.Drawing.Size(104, 67);
+            this.btn_start.TabIndex = 0;
+            this.btn_start.Text = "Start";
+            this.btn_start.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_start.UseVisualStyleBackColor = false;
+            this.btn_start.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.labelTime);
             this.panel6.Controls.Add(this.panel5);
-            this.panel6.Controls.Add(this.txtS);
+            this.panel6.Controls.Add(this.txt_sec);
             this.panel6.Controls.Add(this.textBox3);
-            this.panel6.Controls.Add(this.txtmin);
+            this.panel6.Controls.Add(this.txt_min);
             this.panel6.Controls.Add(this.textBox1);
-            this.panel6.Controls.Add(this.txtH);
+            this.panel6.Controls.Add(this.txt_hours);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(985, 580);
             this.panel6.TabIndex = 10;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // labelTime
+            // txt_sec
             // 
-            this.labelTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTime.AutoSize = true;
-            this.labelTime.BackColor = System.Drawing.Color.White;
-            this.labelTime.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.ForeColor = System.Drawing.Color.Black;
-            this.labelTime.Location = new System.Drawing.Point(884, 534);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(83, 19);
-            this.labelTime.TabIndex = 10;
-            this.labelTime.Text = "HH:MM:SS";
-            // 
-            // txtS
-            // 
-            this.txtS.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtS.Font = new System.Drawing.Font("Digital", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtS.Location = new System.Drawing.Point(620, 67);
-            this.txtS.Name = "txtS";
-            this.txtS.Size = new System.Drawing.Size(126, 105);
-            this.txtS.TabIndex = 4;
-            this.txtS.Text = "00";
+            this.txt_sec.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_sec.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_sec.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_sec.Location = new System.Drawing.Point(620, 67);
+            this.txt_sec.Name = "txt_sec";
+            this.txt_sec.Size = new System.Drawing.Size(126, 109);
+            this.txt_sec.TabIndex = 4;
+            this.txt_sec.Text = "00";
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Digital", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(585, 57);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(61, 105);
+            this.textBox3.Size = new System.Drawing.Size(61, 109);
             this.textBox3.TabIndex = 3;
             this.textBox3.Text = ":";
             // 
-            // txtmin
+            // txt_min
             // 
-            this.txtmin.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtmin.Font = new System.Drawing.Font("Digital", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmin.Location = new System.Drawing.Point(473, 67);
-            this.txtmin.Name = "txtmin";
-            this.txtmin.Size = new System.Drawing.Size(126, 105);
-            this.txtmin.TabIndex = 2;
-            this.txtmin.Text = "00";
+            this.txt_min.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_min.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_min.Location = new System.Drawing.Point(473, 67);
+            this.txt_min.Name = "txt_min";
+            this.txt_min.Size = new System.Drawing.Size(126, 109);
+            this.txt_min.TabIndex = 2;
+            this.txt_min.Text = "00";
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Digital", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(436, 57);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(61, 105);
+            this.textBox1.Size = new System.Drawing.Size(61, 109);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = ":";
             // 
-            // txtH
+            // txt_hours
             // 
-            this.txtH.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtH.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtH.Font = new System.Drawing.Font("Digital", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtH.Location = new System.Drawing.Point(324, 67);
-            this.txtH.Name = "txtH";
-            this.txtH.Size = new System.Drawing.Size(126, 105);
-            this.txtH.TabIndex = 0;
-            this.txtH.Text = "00";
+            this.txt_hours.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_hours.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_hours.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_hours.Location = new System.Drawing.Point(324, 67);
+            this.txt_hours.Name = "txt_hours";
+            this.txt_hours.Size = new System.Drawing.Size(126, 109);
+            this.txt_hours.TabIndex = 0;
+            this.txt_hours.Text = "00";
             // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // labelTime
+            // 
+            this.labelTime.AutoSize = true;
+            this.labelTime.Location = new System.Drawing.Point(915, 549);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(57, 21);
+            this.labelTime.TabIndex = 10;
+            this.labelTime.Text = "label1";
             // 
             // UC_Workinghours
             // 
@@ -211,7 +206,6 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UC_Workinghours";
             this.Size = new System.Drawing.Size(985, 580);
-            this.Load += new System.EventHandler(this.UC_ManageExpense_Load);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -221,16 +215,16 @@
 
         #endregion
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnStop;
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btn_stop;
+        private System.Windows.Forms.Button btn_start;
+        private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txtS;
+        private System.Windows.Forms.TextBox txt_sec;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox txtmin;
+        private System.Windows.Forms.TextBox txt_min;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox txtH;
+        private System.Windows.Forms.TextBox txt_hours;
         private System.Windows.Forms.Timer timer1;
-        public System.Windows.Forms.Label labelTime;
+        private System.Windows.Forms.Label labelTime;
     }
 }

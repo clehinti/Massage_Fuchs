@@ -61,8 +61,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 28);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Kunden";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Text = "Kunden";            
             // 
             // txtName
             // 
@@ -181,7 +180,6 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.Name = "UC_Createcustomer";
             this.Size = new System.Drawing.Size(985, 578);
-            this.Load += new System.EventHandler(this.UC_ManageUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

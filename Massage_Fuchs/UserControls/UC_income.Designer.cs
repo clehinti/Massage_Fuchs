@@ -81,7 +81,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(985, 22);
             this.panel1.TabIndex = 4;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+
             // 
             // labelTime
             // 
@@ -112,7 +112,7 @@
             this.txtmade.Name = "txtmade";
             this.txtmade.Size = new System.Drawing.Size(179, 27);
             this.txtmade.TabIndex = 5;
-            this.txtmade.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+
             // 
             // btnAddNewBooks
             // 
