@@ -32,25 +32,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Dashboard));
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelSide = new System.Windows.Forms.Panel();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnViewSales = new System.Windows.Forms.Button();
-            this.btnUsers = new System.Windows.Forms.Button();
-            this.btnExpense = new System.Windows.Forms.Button();
-            this.btnPurchase = new System.Windows.Forms.Button();
-            this.btnSaleBooks = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.btn_calender = new System.Windows.Forms.Button();
+            this.btn_data = new System.Windows.Forms.Button();
+            this.btn_income = new System.Windows.Forms.Button();
+            this.btn_workinho = new System.Windows.Forms.Button();
+            this.btn_workingh = new System.Windows.Forms.Button();
+            this.btn_customers = new System.Windows.Forms.Button();
+            this.btn_home = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btn_move = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btn_minimize = new System.Windows.Forms.Button();
+            this.btn_close = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelTime = new System.Windows.Forms.Label();
+            this.label_time = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.panelControls = new System.Windows.Forms.Panel();
-            this.btn_minimize = new System.Windows.Forms.Button();
             this.panelLeft.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,13 +62,13 @@
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panelLeft.Controls.Add(this.panelSide);
-            this.panelLeft.Controls.Add(this.btnSettings);
-            this.panelLeft.Controls.Add(this.btnViewSales);
-            this.panelLeft.Controls.Add(this.btnUsers);
-            this.panelLeft.Controls.Add(this.btnExpense);
-            this.panelLeft.Controls.Add(this.btnPurchase);
-            this.panelLeft.Controls.Add(this.btnSaleBooks);
-            this.panelLeft.Controls.Add(this.btnHome);
+            this.panelLeft.Controls.Add(this.btn_calender);
+            this.panelLeft.Controls.Add(this.btn_data);
+            this.panelLeft.Controls.Add(this.btn_income);
+            this.panelLeft.Controls.Add(this.btn_workinho);
+            this.panelLeft.Controls.Add(this.btn_workingh);
+            this.panelLeft.Controls.Add(this.btn_customers);
+            this.panelLeft.Controls.Add(this.btn_home);
             this.panelLeft.Controls.Add(this.panel3);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
@@ -84,128 +84,128 @@
             this.panelSide.Size = new System.Drawing.Size(7, 60);
             this.panelSide.TabIndex = 1;
             // 
-            // btnSettings
+            // btn_calender
             // 
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Image = global::Massage_Fuchs.Properties.Resources.add;
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(12, 530);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(203, 60);
-            this.btnSettings.TabIndex = 2;
-            this.btnSettings.Text = "       Kalender";
-            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = true;          
+            this.btn_calender.FlatAppearance.BorderSize = 0;
+            this.btn_calender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_calender.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_calender.ForeColor = System.Drawing.Color.White;
+            this.btn_calender.Image = global::Massage_Fuchs.Properties.Resources.add;
+            this.btn_calender.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_calender.Location = new System.Drawing.Point(12, 530);
+            this.btn_calender.Name = "btn_calender";
+            this.btn_calender.Size = new System.Drawing.Size(203, 60);
+            this.btn_calender.TabIndex = 2;
+            this.btn_calender.Text = "       Kalender";
+            this.btn_calender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_calender.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_calender.UseVisualStyleBackColor = true;
             // 
-            // btnViewSales
+            // btn_data
             // 
-            this.btnViewSales.FlatAppearance.BorderSize = 0;
-            this.btnViewSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewSales.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewSales.ForeColor = System.Drawing.Color.White;
-            this.btnViewSales.Image = global::Massage_Fuchs.Properties.Resources.invite;
-            this.btnViewSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewSales.Location = new System.Drawing.Point(12, 466);
-            this.btnViewSales.Name = "btnViewSales";
-            this.btnViewSales.Size = new System.Drawing.Size(203, 60);
-            this.btnViewSales.TabIndex = 2;
-            this.btnViewSales.Text = "    Kundendaten";
-            this.btnViewSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnViewSales.UseVisualStyleBackColor = true;
-            this.btnViewSales.Click += new System.EventHandler(this.btnViewSales_Click);
+            this.btn_data.FlatAppearance.BorderSize = 0;
+            this.btn_data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_data.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_data.ForeColor = System.Drawing.Color.White;
+            this.btn_data.Image = global::Massage_Fuchs.Properties.Resources.invite;
+            this.btn_data.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_data.Location = new System.Drawing.Point(12, 466);
+            this.btn_data.Name = "btn_data";
+            this.btn_data.Size = new System.Drawing.Size(203, 60);
+            this.btn_data.TabIndex = 2;
+            this.btn_data.Text = "    Kundendaten";
+            this.btn_data.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_data.UseVisualStyleBackColor = true;
+            this.btn_data.Click += new System.EventHandler(this.btnViewSales_Click);
             // 
-            // btnUsers
+            // btn_income
             // 
-            this.btnUsers.FlatAppearance.BorderSize = 0;
-            this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Image = global::Massage_Fuchs.Properties.Resources.payment_method;
-            this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsers.Location = new System.Drawing.Point(12, 402);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(203, 60);
-            this.btnUsers.TabIndex = 2;
-            this.btnUsers.Text = "       Einkommen";
-            this.btnUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUsers.UseVisualStyleBackColor = true;
-            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
+            this.btn_income.FlatAppearance.BorderSize = 0;
+            this.btn_income.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_income.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_income.ForeColor = System.Drawing.Color.White;
+            this.btn_income.Image = global::Massage_Fuchs.Properties.Resources.payment_method;
+            this.btn_income.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_income.Location = new System.Drawing.Point(12, 402);
+            this.btn_income.Name = "btn_income";
+            this.btn_income.Size = new System.Drawing.Size(203, 60);
+            this.btn_income.TabIndex = 2;
+            this.btn_income.Text = "       Einkommen";
+            this.btn_income.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_income.UseVisualStyleBackColor = true;
+            this.btn_income.Click += new System.EventHandler(this.btnUsers_Click);
             // 
-            // btnExpense
+            // btn_workinho
             // 
-            this.btnExpense.FlatAppearance.BorderSize = 0;
-            this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExpense.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExpense.ForeColor = System.Drawing.Color.White;
-            this.btnExpense.Image = global::Massage_Fuchs.Properties.Resources.update;
-            this.btnExpense.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpense.Location = new System.Drawing.Point(12, 336);
-            this.btnExpense.Name = "btnExpense";
-            this.btnExpense.Size = new System.Drawing.Size(203, 60);
-            this.btnExpense.TabIndex = 2;
-            this.btnExpense.Text = "    Arbeitsstunden übersicht";
-            this.btnExpense.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExpense.UseVisualStyleBackColor = true;
-            this.btnExpense.Click += new System.EventHandler(this.button4_Click);
+            this.btn_workinho.FlatAppearance.BorderSize = 0;
+            this.btn_workinho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_workinho.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_workinho.ForeColor = System.Drawing.Color.White;
+            this.btn_workinho.Image = global::Massage_Fuchs.Properties.Resources.update;
+            this.btn_workinho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_workinho.Location = new System.Drawing.Point(12, 336);
+            this.btn_workinho.Name = "btn_workinho";
+            this.btn_workinho.Size = new System.Drawing.Size(203, 60);
+            this.btn_workinho.TabIndex = 2;
+            this.btn_workinho.Text = "    Arbeitsstunden übersicht";
+            this.btn_workinho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_workinho.UseVisualStyleBackColor = true;
+            this.btn_workinho.Click += new System.EventHandler(this.button4_Click);
             // 
-            // btnPurchase
+            // btn_workingh
             // 
-            this.btnPurchase.FlatAppearance.BorderSize = 0;
-            this.btnPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPurchase.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchase.ForeColor = System.Drawing.Color.White;
-            this.btnPurchase.Image = global::Massage_Fuchs.Properties.Resources.report;
-            this.btnPurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPurchase.Location = new System.Drawing.Point(12, 271);
-            this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(203, 60);
-            this.btnPurchase.TabIndex = 2;
-            this.btnPurchase.Text = "    Arbeitsstunden";
-            this.btnPurchase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPurchase.UseVisualStyleBackColor = true;
-            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
+            this.btn_workingh.FlatAppearance.BorderSize = 0;
+            this.btn_workingh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_workingh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_workingh.ForeColor = System.Drawing.Color.White;
+            this.btn_workingh.Image = global::Massage_Fuchs.Properties.Resources.report;
+            this.btn_workingh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_workingh.Location = new System.Drawing.Point(12, 271);
+            this.btn_workingh.Name = "btn_workingh";
+            this.btn_workingh.Size = new System.Drawing.Size(203, 60);
+            this.btn_workingh.TabIndex = 2;
+            this.btn_workingh.Text = "    Arbeitsstunden";
+            this.btn_workingh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_workingh.UseVisualStyleBackColor = true;
+            this.btn_workingh.Click += new System.EventHandler(this.btnPurchase_Click);
             // 
-            // btnSaleBooks
+            // btn_customers
             // 
-            this.btnSaleBooks.FlatAppearance.BorderSize = 0;
-            this.btnSaleBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaleBooks.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaleBooks.ForeColor = System.Drawing.Color.White;
-            this.btnSaleBooks.Image = global::Massage_Fuchs.Properties.Resources.man;
-            this.btnSaleBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaleBooks.Location = new System.Drawing.Point(12, 205);
-            this.btnSaleBooks.Name = "btnSaleBooks";
-            this.btnSaleBooks.Size = new System.Drawing.Size(203, 60);
-            this.btnSaleBooks.TabIndex = 2;
-            this.btnSaleBooks.Text = "         Kunden";
-            this.btnSaleBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSaleBooks.UseVisualStyleBackColor = true;
-            this.btnSaleBooks.Click += new System.EventHandler(this.btnSaleBooks_Click);
+            this.btn_customers.FlatAppearance.BorderSize = 0;
+            this.btn_customers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_customers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_customers.ForeColor = System.Drawing.Color.White;
+            this.btn_customers.Image = global::Massage_Fuchs.Properties.Resources.man;
+            this.btn_customers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_customers.Location = new System.Drawing.Point(12, 205);
+            this.btn_customers.Name = "btn_customers";
+            this.btn_customers.Size = new System.Drawing.Size(203, 60);
+            this.btn_customers.TabIndex = 2;
+            this.btn_customers.Text = "         Kunden";
+            this.btn_customers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_customers.UseVisualStyleBackColor = true;
+            this.btn_customers.Click += new System.EventHandler(this.btnSaleBooks_Click);
             // 
-            // btnHome
+            // btn_home
             // 
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::Massage_Fuchs.Properties.Resources.home256_24783__1_;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(11, 140);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(203, 60);
-            this.btnHome.TabIndex = 2;
-            this.btnHome.Text = "           Home";
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.ForeColor = System.Drawing.Color.White;
+            this.btn_home.Image = global::Massage_Fuchs.Properties.Resources.home256_24783__1_;
+            this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_home.Location = new System.Drawing.Point(11, 140);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(203, 60);
+            this.btn_home.TabIndex = 2;
+            this.btn_home.Text = "           Home";
+            this.btn_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_home.UseVisualStyleBackColor = true;
+            this.btn_home.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button8);
+            this.panel3.Controls.Add(this.btn_move);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -213,22 +213,22 @@
             this.panel3.Size = new System.Drawing.Size(215, 140);
             this.panel3.TabIndex = 0;
             // 
-            // button8
+            // btn_move
             // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(173, 8);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(38, 29);
-            this.button8.TabIndex = 2;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btn_move.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_move.FlatAppearance.BorderSize = 0;
+            this.btn_move.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_move.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_move.ForeColor = System.Drawing.Color.White;
+            this.btn_move.Image = ((System.Drawing.Image)(resources.GetObject("btn_move.Image")));
+            this.btn_move.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_move.Location = new System.Drawing.Point(173, 8);
+            this.btn_move.Name = "btn_move";
+            this.btn_move.Size = new System.Drawing.Size(38, 29);
+            this.btn_move.TabIndex = 2;
+            this.btn_move.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_move.UseVisualStyleBackColor = true;
+            this.btn_move.Click += new System.EventHandler(this.button8_Click);
             // 
             // pictureBox1
             // 
@@ -243,35 +243,53 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.btn_minimize);
-            this.panel4.Controls.Add(this.button9);
+            this.panel4.Controls.Add(this.btn_close);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(215, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(985, 48);
             this.panel4.TabIndex = 0;
             // 
-            // button9
+            // btn_minimize
             // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(941, 1);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(44, 45);
-            this.button9.TabIndex = 2;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btn_minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_minimize.FlatAppearance.BorderSize = 0;
+            this.btn_minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_minimize.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_minimize.ForeColor = System.Drawing.Color.White;
+            this.btn_minimize.Image = global::Massage_Fuchs.Properties.Resources.minimize;
+            this.btn_minimize.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_minimize.Location = new System.Drawing.Point(839, 1);
+            this.btn_minimize.Name = "btn_minimize";
+            this.btn_minimize.Size = new System.Drawing.Size(44, 45);
+            this.btn_minimize.TabIndex = 3;
+            this.btn_minimize.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_minimize.UseVisualStyleBackColor = true;
+            this.btn_minimize.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_close
+            // 
+            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_close.FlatAppearance.BorderSize = 0;
+            this.btn_close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_close.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_close.ForeColor = System.Drawing.Color.White;
+            this.btn_close.Image = ((System.Drawing.Image)(resources.GetObject("btn_close.Image")));
+            this.btn_close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_close.Location = new System.Drawing.Point(941, 1);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(44, 45);
+            this.btn_close.TabIndex = 2;
+            this.btn_close.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel2.Controls.Add(this.labelTime);
+            this.panel2.Controls.Add(this.label_time);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(215, 48);
@@ -279,18 +297,18 @@
             this.panel2.Size = new System.Drawing.Size(985, 92);
             this.panel2.TabIndex = 1;
             // 
-            // labelTime
+            // label_time
             // 
-            this.labelTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.ForeColor = System.Drawing.Color.White;
-            this.labelTime.Location = new System.Drawing.Point(876, 34);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(83, 19);
-            this.labelTime.TabIndex = 0;
-            this.labelTime.Text = "HH:MM:SS";
-           
+            this.label_time.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_time.AutoSize = true;
+            this.label_time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label_time.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_time.ForeColor = System.Drawing.Color.White;
+            this.label_time.Location = new System.Drawing.Point(876, 34);
+            this.label_time.Name = "label_time";
+            this.label_time.Size = new System.Drawing.Size(83, 19);
+            this.label_time.TabIndex = 0;
+            this.label_time.Text = "HH:MM:SS";
             // 
             // label5
             // 
@@ -319,24 +337,6 @@
             this.panelControls.Size = new System.Drawing.Size(985, 580);
             this.panelControls.TabIndex = 2;
             // 
-            // btn_minimize
-            // 
-            this.btn_minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_minimize.FlatAppearance.BorderSize = 0;
-            this.btn_minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_minimize.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_minimize.ForeColor = System.Drawing.Color.White;
-            this.btn_minimize.Image = ((System.Drawing.Image)(resources.GetObject("btn_minimize.Image")));
-            this.btn_minimize.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_minimize.Location = new System.Drawing.Point(826, 1);
-            this.btn_minimize.Name = "btn_minimize";
-            this.btn_minimize.Size = new System.Drawing.Size(44, 45);
-            this.btn_minimize.TabIndex = 3;
-            this.btn_minimize.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_minimize.UseVisualStyleBackColor = true;
-            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
-            // 
             // Form_Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -350,7 +350,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Dashboard";
             this.Text = "Form_Dashboard";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;          
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelLeft.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -366,23 +366,23 @@
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelSide;
-        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btn_home;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnSettings;
-        private System.Windows.Forms.Button btnViewSales;
-        private System.Windows.Forms.Button btnUsers;
-        private System.Windows.Forms.Button btnExpense;
-        private System.Windows.Forms.Button btnPurchase;
-        private System.Windows.Forms.Button btnSaleBooks;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn_calender;
+        private System.Windows.Forms.Button btn_data;
+        private System.Windows.Forms.Button btn_income;
+        private System.Windows.Forms.Button btn_workinho;
+        private System.Windows.Forms.Button btn_workingh;
+        private System.Windows.Forms.Button btn_customers;
+        private System.Windows.Forms.Button btn_move;
+        private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timerTime;
         private System.Windows.Forms.Panel panelControls;
-        public System.Windows.Forms.Label labelTime;
+        public System.Windows.Forms.Label label_time;
         private System.Windows.Forms.Button btn_minimize;
     }
 }

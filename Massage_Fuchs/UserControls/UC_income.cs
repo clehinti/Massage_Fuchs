@@ -15,12 +15,11 @@ namespace Massage_Fuchs.UserControls
 {
     public partial class UC_income : UserControl
     {
-        public MySqlConnection con = new MySqlConnection("server=web.hak-kitz.eu;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
+        public MySqlConnection con = new MySqlConnection("server=eduweb20;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
         MySqlCommand cmd = new MySqlCommand();
         DataTable dt = new DataTable();
         string sqlQuery;
         MySqlDataReader reader;
-
         public UC_income()
         {
             InitializeComponent();
@@ -62,7 +61,6 @@ namespace Massage_Fuchs.UserControls
             }
             loaddb();
         }
-
         private void UC_PurchaseDetails_Load(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;

@@ -61,7 +61,6 @@
             this.gridcst.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridcst.Size = new System.Drawing.Size(965, 521);
             this.gridcst.TabIndex = 0;
-           
             // 
             // label4
             // 
@@ -70,11 +69,12 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(410, 3);
+            this.label4.Location = new System.Drawing.Point(689, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 25);
             this.label4.TabIndex = 1;
             this.label4.Text = "Kunden";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
             // 
@@ -96,7 +96,7 @@
             this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UC_Customeroverview";
-            this.Size = new System.Drawing.Size(985, 580);        
+            this.Size = new System.Drawing.Size(985, 580);
             ((System.ComponentModel.ISupportInitialize)(this.gridcst)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();

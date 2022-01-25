@@ -34,13 +34,13 @@
             this.btn_stop = new System.Windows.Forms.Button();
             this.btn_start = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.labelTime = new System.Windows.Forms.Label();
             this.txt_sec = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.txt_min = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txt_hours = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.labelTime = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -129,6 +129,15 @@
             this.panel6.Size = new System.Drawing.Size(985, 580);
             this.panel6.TabIndex = 10;
             // 
+            // labelTime
+            // 
+            this.labelTime.AutoSize = true;
+            this.labelTime.Location = new System.Drawing.Point(925, 550);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(57, 21);
+            this.labelTime.TabIndex = 10;
+            this.labelTime.Text = "label1";
+            // 
             // txt_sec
             // 
             this.txt_sec.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -188,15 +197,6 @@
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // labelTime
-            // 
-            this.labelTime.AutoSize = true;
-            this.labelTime.Location = new System.Drawing.Point(915, 549);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(57, 21);
-            this.labelTime.TabIndex = 10;
-            this.labelTime.Text = "label1";
             // 
             // UC_Workinghours
             // 

@@ -29,14 +29,14 @@ namespace Massage_Fuchs.Forms
 
         private void button9_Click(object sender, EventArgs e)
         {
-            this.Close();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (isCollapsed)
             {
-                panelLeft.Width = panelLeft.Width + 10;
+                panelLeft.Width = panelLeft.Width + 15;
                 if (panelLeft.Width >= PanelWidth)
                 {
                     timer1.Stop();
@@ -46,8 +46,8 @@ namespace Massage_Fuchs.Forms
             }
             else
             {
-                panelLeft.Width = panelLeft.Width - 10;
-                if (panelLeft.Width <= 59)
+                panelLeft.Width = panelLeft.Width - 15;
+                if (panelLeft.Width <= 65)
                 {
                     timer1.Stop();
                     isCollapsed = true;
@@ -74,52 +74,51 @@ namespace Massage_Fuchs.Forms
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
-            moveSidePanel(btnHome);
+            moveSidePanel(btn_home);
             UC_Home uch = new UC_Home();
             AddControlsToPanel(uch);
         }
 
         private void btnSaleBooks_Click(object sender, EventArgs e)
         {
-            moveSidePanel(btnSaleBooks);
+            moveSidePanel(btn_customers);
             UC_Createcustomer us = new UC_Createcustomer();
             AddControlsToPanel(us);
         }
 
         private void btnPurchase_Click(object sender, EventArgs e)
         {
-            moveSidePanel(btnPurchase);
+            moveSidePanel(btn_workingh);
             AddControlsToPanel(ea);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            moveSidePanel(btnExpense);
+            moveSidePanel(btn_workinho);
             UC_Workinghoursoverview up = new UC_Workinghoursoverview();
             AddControlsToPanel(up);
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            moveSidePanel(btnUsers);
+            moveSidePanel(btn_income);
             UC_income um = new UC_income();
             AddControlsToPanel(um);
         }
 
         private void btnViewSales_Click(object sender, EventArgs e)
         {
-            moveSidePanel(btnViewSales);
+            moveSidePanel(btn_data);
             UC_Customeroverview vs = new UC_Customeroverview();
             AddControlsToPanel(vs);
         }
 
         private void timerTime_Tick(object sender, EventArgs e)
         {
-            DateTime dt = DateTime.Now;
-            labelTime.Text = dt.ToString("HH:MM:ss");
+            label_time.Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
-        private void btn_minimize_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }

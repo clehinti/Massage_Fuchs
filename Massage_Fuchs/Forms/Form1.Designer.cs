@@ -91,9 +91,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(60, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 25);
+            this.label2.Size = new System.Drawing.Size(168, 25);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Massage_Fuchs";
+            this.label2.Text = "Massage Fuchs";
             // 
             // label1
             // 

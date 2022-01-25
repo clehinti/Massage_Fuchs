@@ -24,8 +24,8 @@ namespace Massage_Fuchs.UserControls
 
         private void timerTime_Tick(object sender, EventArgs e)
         {
-            DateTime dt = DateTime.Now;
-            labelTime.Text = dt.ToString("HH:MM:ss");
+            label_time.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
     }
 }

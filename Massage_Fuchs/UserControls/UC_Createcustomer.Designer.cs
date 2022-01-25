@@ -57,11 +57,11 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(414, 18);
+            this.label2.Location = new System.Drawing.Point(403, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 28);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Kunden";            
+            this.label2.Text = "Kunden";
             // 
             // txtName
             // 
@@ -88,7 +88,7 @@
             this.txtEmail.Location = new System.Drawing.Point(136, 240);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(199, 27);
-            this.txtEmail.TabIndex = 1;
+            this.txtEmail.TabIndex = 3;
             // 
             // label7
             // 
@@ -108,7 +108,7 @@
             this.txtproblem.Multiline = true;
             this.txtproblem.Name = "txtproblem";
             this.txtproblem.Size = new System.Drawing.Size(575, 119);
-            this.txtproblem.TabIndex = 1;
+            this.txtproblem.TabIndex = 4;
             // 
             // label8
             // 
@@ -127,7 +127,7 @@
             this.txtAdresse.Location = new System.Drawing.Point(136, 200);
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.Size = new System.Drawing.Size(199, 27);
-            this.txtAdresse.TabIndex = 1;
+            this.txtAdresse.TabIndex = 2;
             // 
             // btnsave
             // 
@@ -137,10 +137,10 @@
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.ForeColor = System.Drawing.Color.White;
-            this.btnsave.Location = new System.Drawing.Point(669, 273);
+            this.btnsave.Location = new System.Drawing.Point(515, 273);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(164, 38);
-            this.btnsave.TabIndex = 22;
+            this.btnsave.TabIndex = 5;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -153,10 +153,10 @@
             this.btnclear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclear.ForeColor = System.Drawing.Color.White;
-            this.btnclear.Location = new System.Drawing.Point(525, 273);
+            this.btnclear.Location = new System.Drawing.Point(698, 273);
             this.btnclear.Name = "btnclear";
-            this.btnclear.Size = new System.Drawing.Size(138, 38);
-            this.btnclear.TabIndex = 21;
+            this.btnclear.Size = new System.Drawing.Size(164, 38);
+            this.btnclear.TabIndex = 6;
             this.btnclear.Text = "Clear";
             this.btnclear.UseVisualStyleBackColor = false;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);

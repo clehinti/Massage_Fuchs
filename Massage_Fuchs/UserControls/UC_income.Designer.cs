@@ -36,7 +36,7 @@
             this.labelTime = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtmade = new System.Windows.Forms.TextBox();
-            this.btnAddNewBooks = new System.Windows.Forms.Button();
+            this.btn_addIncome = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dtgrd = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -81,7 +81,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(985, 22);
             this.panel1.TabIndex = 4;
-
             // 
             // labelTime
             // 
@@ -99,7 +98,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel5.Controls.Add(this.txtmade);
-            this.panel5.Controls.Add(this.btnAddNewBooks);
+            this.panel5.Controls.Add(this.btn_addIncome);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(10, 10);
             this.panel5.Name = "panel5";
@@ -112,24 +111,23 @@
             this.txtmade.Name = "txtmade";
             this.txtmade.Size = new System.Drawing.Size(179, 27);
             this.txtmade.TabIndex = 5;
-
             // 
-            // btnAddNewBooks
+            // btn_addIncome
             // 
-            this.btnAddNewBooks.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAddNewBooks.FlatAppearance.BorderSize = 0;
-            this.btnAddNewBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewBooks.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNewBooks.ForeColor = System.Drawing.Color.White;
-            this.btnAddNewBooks.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewBooks.Image")));
-            this.btnAddNewBooks.Location = new System.Drawing.Point(0, 0);
-            this.btnAddNewBooks.Name = "btnAddNewBooks";
-            this.btnAddNewBooks.Size = new System.Drawing.Size(239, 67);
-            this.btnAddNewBooks.TabIndex = 0;
-            this.btnAddNewBooks.Text = "    Umsatz eingeben";
-            this.btnAddNewBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddNewBooks.UseVisualStyleBackColor = true;
-            this.btnAddNewBooks.Click += new System.EventHandler(this.btnAddNewBooks_Click);
+            this.btn_addIncome.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_addIncome.FlatAppearance.BorderSize = 0;
+            this.btn_addIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_addIncome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_addIncome.ForeColor = System.Drawing.Color.White;
+            this.btn_addIncome.Image = ((System.Drawing.Image)(resources.GetObject("btn_addIncome.Image")));
+            this.btn_addIncome.Location = new System.Drawing.Point(0, 0);
+            this.btn_addIncome.Name = "btn_addIncome";
+            this.btn_addIncome.Size = new System.Drawing.Size(239, 67);
+            this.btn_addIncome.TabIndex = 0;
+            this.btn_addIncome.Text = "    Umsatz eingeben";
+            this.btn_addIncome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_addIncome.UseVisualStyleBackColor = true;
+            this.btn_addIncome.Click += new System.EventHandler(this.btnAddNewBooks_Click);
             // 
             // panel6
             // 
@@ -187,7 +185,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnAddNewBooks;
+        private System.Windows.Forms.Button btn_addIncome;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txtmade;
         private System.Windows.Forms.DataGridView dtgrd;
