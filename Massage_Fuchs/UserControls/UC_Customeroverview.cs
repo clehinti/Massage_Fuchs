@@ -14,7 +14,7 @@ namespace Massage_Fuchs.UserControls
 
     public partial class UC_Customeroverview : UserControl
     {
-        public MySqlConnection con = new MySqlConnection("server=eduweb20;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
+        public MySqlConnection con = new MySqlConnection("server=web.hak-kitz.eu;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
         MySqlCommand cmd = new MySqlCommand();
         DataTable dt = new DataTable();
         MySqlDataReader reader;
