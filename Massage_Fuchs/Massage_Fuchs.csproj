@@ -102,12 +102,6 @@
     <Compile Include="CustomControls\DragControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Forms\CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,10 +152,6 @@
     <Compile Include="UserControls\UC_Customeroverview.Designer.cs">
       <DependentUpon>UC_Customeroverview.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

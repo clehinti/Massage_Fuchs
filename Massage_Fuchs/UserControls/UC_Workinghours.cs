@@ -64,6 +64,9 @@ namespace Massage_Fuchs.UserControls
                 }
             }
             Time();
+
+            DateTime dt = DateTime.Now;
+            lbl_time.Text = dt.ToString("yyyy-MM-dd");
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -81,7 +84,7 @@ namespace Massage_Fuchs.UserControls
         private void UC_ManageExpense_Load(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
-            labelTime.Text = dt.ToString("yyyy-MM-dd");
+            lbl_time.Text = dt.ToString("yyyy-MM-dd");
         }
 
         void db()
@@ -91,7 +94,7 @@ namespace Massage_Fuchs.UserControls
                 string Working = txt_hours.Text + ":" + txt_min.Text + ":" + txt_sec.Text;
                 con.Open();
                 sqlQuery = "insert into Working (Working,date,s,m,h)" +
-                "values('" + Working + "', '" + labelTime.Text + "','" + txt_sec.Text + "','" + txt_min.Text + "','" + txt_hours.Text + "')";
+                "values('" + Working + "', '" + lbl_time.Text + "','" + txt_sec.Text + "','" + txt_min.Text + "','" + txt_hours.Text + "')";
 
                 cmd = new MySqlCommand(sqlQuery, con);
                 reader = cmd.ExecuteReader();
@@ -100,7 +103,7 @@ namespace Massage_Fuchs.UserControls
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Student System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(ex.Message, "Massage Fuchs", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             finally
             {
