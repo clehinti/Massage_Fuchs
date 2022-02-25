@@ -52,5 +52,18 @@ namespace Massage_Fuchs.UserControls
             gridvw.Columns[5].Visible = false;
         }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            cmd.Connection = con;
+
+            cmd.CommandText = "SELECT id,Working,date FROM Working";
+
+            reader = cmd.ExecuteReader();
+            dt.Load(reader);
+            reader.Close();
+            con.Close();
+            gridvw.DataSource = dt;
+        }
     }
 }
