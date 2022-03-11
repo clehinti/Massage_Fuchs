@@ -39,6 +39,8 @@
             this.txtAdresse = new System.Windows.Forms.TextBox();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnclear = new System.Windows.Forms.Button();
+            this.txtPostleitzahl = new System.Windows.Forms.TextBox();
+            this.lbl_plz = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -76,7 +78,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(67, 244);
+            this.label6.Location = new System.Drawing.Point(67, 288);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 19);
             this.label6.TabIndex = 0;
@@ -85,7 +87,7 @@
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmail.Location = new System.Drawing.Point(136, 240);
+            this.txtEmail.Location = new System.Drawing.Point(136, 284);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(199, 27);
             this.txtEmail.TabIndex = 3;
@@ -161,10 +163,33 @@
             this.btnclear.UseVisualStyleBackColor = false;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
+            // txtPostleitzahl
+            // 
+            this.txtPostleitzahl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPostleitzahl.Location = new System.Drawing.Point(136, 240);
+            this.txtPostleitzahl.Name = "txtPostleitzahl";
+            this.txtPostleitzahl.Size = new System.Drawing.Size(199, 27);
+            this.txtPostleitzahl.TabIndex = 8;
+            this.txtPostleitzahl.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lbl_plz
+            // 
+            this.lbl_plz.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_plz.AutoSize = true;
+            this.lbl_plz.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_plz.Location = new System.Drawing.Point(27, 244);
+            this.lbl_plz.Name = "lbl_plz";
+            this.lbl_plz.Size = new System.Drawing.Size(96, 19);
+            this.lbl_plz.TabIndex = 7;
+            this.lbl_plz.Text = "Postleitzahl:";
+            this.lbl_plz.Click += new System.EventHandler(this.label3_Click);
+            // 
             // UC_Createcustomer
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txtPostleitzahl);
+            this.Controls.Add(this.lbl_plz);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txtproblem);
@@ -198,5 +223,7 @@
         private System.Windows.Forms.TextBox txtAdresse;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnclear;
+        private System.Windows.Forms.TextBox txtPostleitzahl;
+        private System.Windows.Forms.Label lbl_plz;
     }
 }

@@ -30,8 +30,8 @@ namespace Massage_Fuchs.UserControls
             try
             {
                 con.Open();
-                sqlQuery = "insert into customer (name,address,email,problems)" +
-                "values('" + txtName.Text + "', '" + txtAdresse.Text + "', '" + txtEmail.Text + "', '" +
+                sqlQuery = "insert into customer (name,address, Postleitzahl, email,problems)" +
+                "values('" + txtName.Text + "', '" + txtAdresse.Text + "','" + txtPostleitzahl.Text + "', '" + txtEmail.Text + "', '" +
                 txtproblem.Text + "')";
 
                 cmd = new MySqlCommand(sqlQuery, con);
@@ -63,6 +63,16 @@ namespace Massage_Fuchs.UserControls
         private void btnclear_Click(object sender, EventArgs e)
         {
             clear();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
