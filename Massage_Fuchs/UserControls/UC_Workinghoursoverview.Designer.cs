@@ -47,9 +47,9 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(456, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 25);
+            this.label4.Size = new System.Drawing.Size(163, 25);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Working hours";
+            this.label4.Text = "Arbeitsstunden";
             // 
             // gridvw
             // 
@@ -71,6 +71,7 @@
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(290, 29);
             this.txtTotal.TabIndex = 17;
+            this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
             // txtTotal1
             // 

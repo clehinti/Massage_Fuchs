@@ -128,6 +128,12 @@
     <Compile Include="UserControls\UC_Home.Designer.cs">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_Invoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Invoice.Designer.cs">
+      <DependentUpon>UC_Invoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UC_Workinghours.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Invoice.resx">
+      <DependentUpon>UC_Invoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Workinghours.resx">
       <DependentUpon>UC_Workinghours.cs</DependentUpon>

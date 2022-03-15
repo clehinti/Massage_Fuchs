@@ -41,15 +41,6 @@ namespace Massage_Fuchs.UserControls
         private void UC_whoverview_Load(object sender, EventArgs e)
         {
             loaddb();
-            dgvsalvisible();
-        }
-
-
-        void dgvsalvisible()
-        {
-            gridvw.Columns[3].Visible = false;
-            gridvw.Columns[4].Visible = false;
-            gridvw.Columns[5].Visible = false;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -57,13 +48,18 @@ namespace Massage_Fuchs.UserControls
             con.Open();
             cmd.Connection = con;
 
-            cmd.CommandText = "SELECT id,Working,date FROM Working";
+            cmd.CommandText = "SELECT id, Working, date FROM Working";
 
             reader = cmd.ExecuteReader();
             dt.Load(reader);
             reader.Close();
             con.Close();
             gridvw.DataSource = dt;
+        }
+
+        private void txtTotal_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
