@@ -45,8 +45,8 @@ namespace Massage_Fuchs.UserControls
             try
             {
                 con.Open();
-                sqlQuery = "insert into made (made,date)" +
-                "values('" + txtmade.Text + "', '" + labelTime.Text + "')";
+                sqlQuery = "insert into made (made,date, time)" +
+                "values('" + txtmade.Text + "', '" + labelTime.Text + "', '" + label_date.Text + "')";
                 cmd = new MySqlCommand(sqlQuery, con);
                 reader = cmd.ExecuteReader();
                 con.Close();
@@ -65,6 +65,17 @@ namespace Massage_Fuchs.UserControls
         {
             DateTime dt = DateTime.Now;
             labelTime.Text = dt.ToString("yyyy-MM-dd");
+           
+        }
+
+        private void timer_time_Tick(object sender, EventArgs e)
+        {
+            label_date.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

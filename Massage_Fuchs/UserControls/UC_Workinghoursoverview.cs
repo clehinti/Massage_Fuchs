@@ -45,16 +45,16 @@ namespace Massage_Fuchs.UserControls
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            con.Open();
-            cmd.Connection = con;
+         
 
-            cmd.CommandText = "SELECT id, Working, date FROM Working";
+            cmd.CommandText = "SELECT id, Working, date FROM Working";       
 
             reader = cmd.ExecuteReader();
             dt.Load(reader);
             reader.Close();
             con.Close();
             gridvw.DataSource = dt;
+
         }
 
         private void txtTotal_TextChanged(object sender, EventArgs e)

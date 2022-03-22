@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_income));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -39,6 +40,8 @@
             this.btn_addIncome = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dtgrd = new System.Windows.Forms.DataGridView();
+            this.label_date = new System.Windows.Forms.Label();
+            this.timer_time = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -62,6 +65,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(975, 10);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel4
             // 
@@ -75,6 +79,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label_date);
             this.panel1.Controls.Add(this.labelTime);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 558);
@@ -88,11 +93,10 @@
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.labelTime.Location = new System.Drawing.Point(874, 0);
+            this.labelTime.Location = new System.Drawing.Point(795, 0);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(83, 19);
+            this.labelTime.Size = new System.Drawing.Size(0, 19);
             this.labelTime.TabIndex = 1;
-            this.labelTime.Text = "HH:MM:SS";
             // 
             // panel5
             // 
@@ -154,6 +158,22 @@
             this.dtgrd.Size = new System.Drawing.Size(965, 481);
             this.dtgrd.TabIndex = 0;
             // 
+            // label_date
+            // 
+            this.label_date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_date.AutoSize = true;
+            this.label_date.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label_date.Location = new System.Drawing.Point(853, 3);
+            this.label_date.Name = "label_date";
+            this.label_date.Size = new System.Drawing.Size(0, 19);
+            this.label_date.TabIndex = 2;
+            // 
+            // timer_time
+            // 
+            this.timer_time.Enabled = true;
+            this.timer_time.Tick += new System.EventHandler(this.timer_time_Tick);
+            // 
             // UC_income
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -190,5 +210,7 @@
         private System.Windows.Forms.TextBox txtmade;
         private System.Windows.Forms.DataGridView dtgrd;
         public System.Windows.Forms.Label labelTime;
+        public System.Windows.Forms.Label label_date;
+        private System.Windows.Forms.Timer timer_time;
     }
 }

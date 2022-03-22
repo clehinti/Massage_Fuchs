@@ -34,13 +34,13 @@
             this.btn_stop = new System.Windows.Forms.Button();
             this.btn_start = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lbl_time = new System.Windows.Forms.Label();
             this.txt_sec = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.txt_min = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txt_hours = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lbl_time = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -129,6 +129,19 @@
             this.panel6.Size = new System.Drawing.Size(985, 580);
             this.panel6.TabIndex = 10;
             // 
+            // lbl_time
+            // 
+            this.lbl_time.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_time.AutoSize = true;
+            this.lbl_time.ForeColor = System.Drawing.Color.White;
+            this.lbl_time.Location = new System.Drawing.Point(878, 10);
+            this.lbl_time.Name = "lbl_time";
+            this.lbl_time.Size = new System.Drawing.Size(104, 21);
+            this.lbl_time.TabIndex = 10;
+            this.lbl_time.Text = "yyyy-MM-dd";
+            // 
             // txt_sec
             // 
             this.txt_sec.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -188,15 +201,6 @@
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // lbl_time
-            // 
-            this.lbl_time.AutoSize = true;
-            this.lbl_time.Location = new System.Drawing.Point(506, 386);
-            this.lbl_time.Name = "lbl_time";
-            this.lbl_time.Size = new System.Drawing.Size(104, 21);
-            this.lbl_time.TabIndex = 10;
-            this.lbl_time.Text = "yyyy-MM-dd";
             // 
             // UC_Workinghours
             // 
