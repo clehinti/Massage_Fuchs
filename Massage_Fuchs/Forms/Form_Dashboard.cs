@@ -122,5 +122,25 @@ namespace Massage_Fuchs.Forms
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelSide_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelLeft_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

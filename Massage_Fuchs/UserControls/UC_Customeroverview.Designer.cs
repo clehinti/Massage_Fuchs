@@ -59,7 +59,7 @@
             this.gridcst.ReadOnly = true;
             this.gridcst.RowHeadersVisible = false;
             this.gridcst.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridcst.Size = new System.Drawing.Size(965, 521);
+            this.gridcst.Size = new System.Drawing.Size(965, 534);
             this.gridcst.TabIndex = 0;
             // 
             // label4
@@ -68,8 +68,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(689, 0);
+            this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label4.Location = new System.Drawing.Point(871, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 25);
             this.label4.TabIndex = 1;
@@ -108,6 +108,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView gridcst;
         private System.Windows.Forms.Label label4;
+
         private System.Windows.Forms.Panel panel6;
     }
 }
