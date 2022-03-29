@@ -45,10 +45,12 @@ namespace Massage_Fuchs.UserControls
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-         
 
-            cmd.CommandText = "SELECT id, Working, date FROM Working";       
+            con.Open();
+            cmd.Connection = con;
 
+            cmd.CommandText = "SELECT id, Working, date FROM Working";
+            
             reader = cmd.ExecuteReader();
             dt.Load(reader);
             reader.Close();

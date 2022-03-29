@@ -59,6 +59,7 @@ namespace Massage_Fuchs.UserControls
             txtEmail.Clear();
             txtName.Clear();
             txtproblem.Clear();
+            txtPostleitzahl.Clear();
         }
         private void btnclear_Click(object sender, EventArgs e)
         {

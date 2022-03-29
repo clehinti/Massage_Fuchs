@@ -90,7 +90,7 @@
             this.txtEmail.Location = new System.Drawing.Point(136, 284);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(199, 27);
-            this.txtEmail.TabIndex = 3;
+            this.txtEmail.TabIndex = 4;
             // 
             // label7
             // 
@@ -110,7 +110,7 @@
             this.txtproblem.Multiline = true;
             this.txtproblem.Name = "txtproblem";
             this.txtproblem.Size = new System.Drawing.Size(575, 119);
-            this.txtproblem.TabIndex = 4;
+            this.txtproblem.TabIndex = 5;
             // 
             // label8
             // 
@@ -142,7 +142,7 @@
             this.btnsave.Location = new System.Drawing.Point(515, 273);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(164, 38);
-            this.btnsave.TabIndex = 5;
+            this.btnsave.TabIndex = 6;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -158,7 +158,7 @@
             this.btnclear.Location = new System.Drawing.Point(698, 273);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(164, 38);
-            this.btnclear.TabIndex = 6;
+            this.btnclear.TabIndex = 7;
             this.btnclear.Text = "Clear";
             this.btnclear.UseVisualStyleBackColor = false;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
@@ -169,7 +169,7 @@
             this.txtPostleitzahl.Location = new System.Drawing.Point(136, 240);
             this.txtPostleitzahl.Name = "txtPostleitzahl";
             this.txtPostleitzahl.Size = new System.Drawing.Size(199, 27);
-            this.txtPostleitzahl.TabIndex = 8;
+            this.txtPostleitzahl.TabIndex = 3;
             this.txtPostleitzahl.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lbl_plz
