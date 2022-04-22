@@ -122,5 +122,11 @@ namespace Massage_Fuchs.Forms
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btn_calender_Click(object sender, EventArgs e)
+        {
+            Forms.Calender c = new Forms.Calender();
+            c.ShowDialog();
+        }
     }
 }

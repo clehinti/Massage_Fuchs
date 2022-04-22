@@ -14,7 +14,7 @@ namespace Massage_Fuchs
     public partial class Form1 : Form
     {
 
-        public MySqlConnection con = new MySqlConnection("server=eduweb20;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
+        public MySqlConnection con = new MySqlConnection("server=web.hak-kitz.eu;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
 
         public Form1()
         {

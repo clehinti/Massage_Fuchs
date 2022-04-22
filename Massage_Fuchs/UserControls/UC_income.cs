@@ -15,7 +15,7 @@ namespace Massage_Fuchs.UserControls
 {
     public partial class UC_income : UserControl
     {
-        public MySqlConnection con = new MySqlConnection("server=eduweb20;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
+        public MySqlConnection con = new MySqlConnection("server=web.hak-kitz.eu;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
         MySqlCommand cmd = new MySqlCommand();
         DataTable dt = new DataTable();
         string sqlQuery;
@@ -31,7 +31,7 @@ namespace Massage_Fuchs.UserControls
             con.Open();
             cmd.Connection = con;
 
-            cmd.CommandText = "Select * FROM made";
+            cmd.CommandText = "Select * FROM made"; //fill datagrid
 
             reader = cmd.ExecuteReader();
             dt.Load(reader);
@@ -46,14 +46,14 @@ namespace Massage_Fuchs.UserControls
             {
                 con.Open();
                 sqlQuery = "insert into made (made,date, time)" +
-                "values('" + txtmade.Text + "', '" + labelTime.Text + "', '" + label_date.Text + "')";
+                "values('" + txtmade.Text + "', '" + labelTime.Text + "', '" + label_date.Text + "')"; //insert income
                 cmd = new MySqlCommand(sqlQuery, con);
                 reader = cmd.ExecuteReader();
                 con.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Massage Fuchs", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(ex.Message, "Massage Fuchs", MessageBoxButtons.OK, MessageBoxIcon.Information); //error Message
             }
             finally
             {
@@ -64,13 +64,13 @@ namespace Massage_Fuchs.UserControls
         private void UC_PurchaseDetails_Load(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
-            labelTime.Text = dt.ToString("yyyy-MM-dd");
+            labelTime.Text = dt.ToString("yyyy-MM-dd"); //date format
            
         }
 
         private void timer_time_Tick(object sender, EventArgs e)
         {
-            label_date.Text = DateTime.Now.ToString("HH:mm:ss");
+            label_date.Text = DateTime.Now.ToString("HH:mm:ss"); //time format
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

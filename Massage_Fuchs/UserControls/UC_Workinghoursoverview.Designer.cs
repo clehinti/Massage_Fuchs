@@ -71,7 +71,7 @@
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(290, 29);
             this.txtTotal.TabIndex = 17;
-            this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
+    
             // 
             // txtTotal1
             // 

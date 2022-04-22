@@ -15,7 +15,7 @@ namespace Massage_Fuchs.UserControls
 {
     public partial class UC_Workinghours : UserControl
     {
-        public MySqlConnection con = new MySqlConnection("server=eduweb20;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
+        public MySqlConnection con = new MySqlConnection("server=web.hak-kitz.eu;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
         MySqlCommand cmd = new MySqlCommand();
         string sqlQuery;
         MySqlDataAdapter DtA = new MySqlDataAdapter();
@@ -32,19 +32,19 @@ namespace Massage_Fuchs.UserControls
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            timer1.Start();
+            timer1.Start(); //start timer
             isActive = true;
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            timer1.Stop();
+            timer1.Stop(); //stop timer
             isActive = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (isActive)
+            if (isActive) //timer in sec, min, and hours
             {
                 timeSec++;
                 if (timeSec >= 60)
@@ -63,10 +63,10 @@ namespace Massage_Fuchs.UserControls
                     }
                 }
             }
-            Time();
+            Time(); //time format
 
             DateTime dt = DateTime.Now;
-            lbl_time.Text = dt.ToString("yyyy-MM-dd");
+            lbl_time.Text = dt.ToString("yyyy-MM-dd"); //date format
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -78,13 +78,13 @@ namespace Massage_Fuchs.UserControls
         {
             txt_sec.Text = String.Format("{0:00}", timeSec);
             txt_min.Text = String.Format("{0:00}", timeMin);
-            txt_hours.Text = String.Format("{0:00}", timeHr);
+            txt_hours.Text = String.Format("{0:00}", timeHr); //time format
         }
 
         private void UC_ManageExpense_Load(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
-            lbl_time.Text = dt.ToString("yyyy-MM-dd");
+            lbl_time.Text = dt.ToString("yyyy-MM-dd"); //date format
         }
 
         void db()
@@ -94,7 +94,7 @@ namespace Massage_Fuchs.UserControls
                 string Working = txt_hours.Text + ":" + txt_min.Text + ":" + txt_sec.Text;
                 con.Open();
                 sqlQuery = "insert into Working (Working,date,s,m,h)" +
-                "values('" + Working + "', '" + lbl_time.Text + "','" + txt_sec.Text + "','" + txt_min.Text + "','" + txt_hours.Text + "')";
+                "values('" + Working + "', '" + lbl_time.Text + "','" + txt_sec.Text + "','" + txt_min.Text + "','" + txt_hours.Text + "')"; //add in database
 
                 cmd = new MySqlCommand(sqlQuery, con);
                 reader = cmd.ExecuteReader();
@@ -103,7 +103,7 @@ namespace Massage_Fuchs.UserControls
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Massage Fuchs", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(ex.Message, "Massage Fuchs", MessageBoxButtons.OK, MessageBoxIcon.Information); //error message
             }
             finally
             {
@@ -114,7 +114,7 @@ namespace Massage_Fuchs.UserControls
         {
             db();
             isActive = false;
-            ResetTimer();
+            ResetTimer(); //reset timer
 
         }
 
@@ -124,7 +124,7 @@ namespace Massage_Fuchs.UserControls
             timeSec = timeMin = timeHr = 0;
             txt_sec.Text = "00";
             txt_min.Text = "00";
-            txt_hours.Text = "00";
+            txt_hours.Text = "00"; 
         }
     }
 }

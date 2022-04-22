@@ -13,7 +13,7 @@ namespace Massage_Fuchs.UserControls
 {
     public partial class UC_Createcustomer : UserControl
     {
-        public MySqlConnection con = new MySqlConnection("server=eduweb20;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
+        public MySqlConnection con = new MySqlConnection("server=web.hak-kitz.eu;uid=c.hinterseer;pwd=MyDatabase053;database=c.hinterseer_clehinti");
         MySqlCommand cmd = new MySqlCommand();
         string sqlQuery;
         MySqlDataReader reader;
@@ -23,6 +23,8 @@ namespace Massage_Fuchs.UserControls
         public UC_Createcustomer()
         {
             InitializeComponent();
+            dpCreate.Format = DateTimePickerFormat.Custom;
+            dpCreate.CustomFormat = "yyyy-MM-dd"; //custom format for Datetimepicker
         }
 
         private void btnsave_Click(object sender, EventArgs e)
@@ -30,20 +32,20 @@ namespace Massage_Fuchs.UserControls
             try
             {
                 con.Open();
-                sqlQuery = "insert into customer (name,address, Postleitzahl, email,problems)" +
+                sqlQuery = "insert into customer (name,address, Postleitzahl, email,problems, Appointment, time)" +
                 "values('" + txtName.Text + "', '" + txtAdresse.Text + "','" + txtPostleitzahl.Text + "', '" + txtEmail.Text + "', '" +
-                txtproblem.Text + "')";
+                txtproblem.Text + "','" + dpCreate.Text + "', '" + dtpTime.Text + "')"; //create customer
 
                 cmd = new MySqlCommand(sqlQuery, con);
                 reader = cmd.ExecuteReader();
 
                 con.Close();
-                MessageBox.Show("Added successfully");
+                MessageBox.Show("Added successfully"); //message when created succesfully
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Massage Fuchs", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(ex.Message, "Massage Fuchs", MessageBoxButtons.OK, MessageBoxIcon.Information); //error Message
             }
             finally
             {
@@ -53,27 +55,18 @@ namespace Massage_Fuchs.UserControls
             clear();
         }
 
-        void clear()
+        void clear() //clear txt boxes
         {
             txtAdresse.Clear();
             txtEmail.Clear();
             txtName.Clear();
             txtproblem.Clear();
             txtPostleitzahl.Clear();
+            
         }
         private void btnclear_Click(object sender, EventArgs e)
         {
             clear();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -41,6 +41,10 @@
             this.btnclear = new System.Windows.Forms.Button();
             this.txtPostleitzahl = new System.Windows.Forms.TextBox();
             this.lbl_plz = new System.Windows.Forms.Label();
+            this.dpCreate = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dtpTime = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -110,7 +114,7 @@
             this.txtproblem.Multiline = true;
             this.txtproblem.Name = "txtproblem";
             this.txtproblem.Size = new System.Drawing.Size(575, 119);
-            this.txtproblem.TabIndex = 5;
+            this.txtproblem.TabIndex = 7;
             // 
             // label8
             // 
@@ -142,7 +146,7 @@
             this.btnsave.Location = new System.Drawing.Point(515, 273);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(164, 38);
-            this.btnsave.TabIndex = 6;
+            this.btnsave.TabIndex = 8;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -158,7 +162,7 @@
             this.btnclear.Location = new System.Drawing.Point(698, 273);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(164, 38);
-            this.btnclear.TabIndex = 7;
+            this.btnclear.TabIndex = 9;
             this.btnclear.Text = "Clear";
             this.btnclear.UseVisualStyleBackColor = false;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
@@ -170,7 +174,7 @@
             this.txtPostleitzahl.Name = "txtPostleitzahl";
             this.txtPostleitzahl.Size = new System.Drawing.Size(199, 27);
             this.txtPostleitzahl.TabIndex = 3;
-            this.txtPostleitzahl.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+          
             // 
             // lbl_plz
             // 
@@ -182,12 +186,59 @@
             this.lbl_plz.Size = new System.Drawing.Size(96, 19);
             this.lbl_plz.TabIndex = 7;
             this.lbl_plz.Text = "Postleitzahl:";
-            this.lbl_plz.Click += new System.EventHandler(this.label3_Click);
+           
+            // 
+            // dpCreate
+            // 
+            this.dpCreate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dpCreate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpCreate.Location = new System.Drawing.Point(136, 319);
+            this.dpCreate.MinDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
+            this.dpCreate.Name = "dpCreate";
+            this.dpCreate.Size = new System.Drawing.Size(200, 27);
+            this.dpCreate.TabIndex = 5;
+            this.dpCreate.Value = new System.DateTime(2022, 4, 22, 0, 0, 0, 0);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(54, 325);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 19);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Datum: ";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(54, 361);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 19);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Zeit: ";
+            // 
+            // dtpTime
+            // 
+            this.dtpTime.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpTime.CustomFormat = "hh:mm:ss ";
+            this.dtpTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTime.Location = new System.Drawing.Point(136, 359);
+            this.dtpTime.Name = "dtpTime";
+            this.dtpTime.Size = new System.Drawing.Size(200, 27);
+            this.dtpTime.TabIndex = 6;
             // 
             // UC_Createcustomer
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.dtpTime);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dpCreate);
             this.Controls.Add(this.txtPostleitzahl);
             this.Controls.Add(this.lbl_plz);
             this.Controls.Add(this.btnclear);
@@ -225,5 +276,9 @@
         private System.Windows.Forms.Button btnclear;
         private System.Windows.Forms.TextBox txtPostleitzahl;
         private System.Windows.Forms.Label lbl_plz;
+        private System.Windows.Forms.DateTimePicker dpCreate;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dtpTime;
     }
 }
