@@ -94,7 +94,7 @@ namespace Massage_Fuchs.Forms
             this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_update.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(597, 419);
+            this.btn_update.Location = new System.Drawing.Point(597, 407);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(164, 38);
             this.btn_update.TabIndex = 28;
