@@ -60,7 +60,7 @@
             // 
             // panelLeft
             // 
-            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panelLeft.BackColor = System.Drawing.Color.SaddleBrown;
             this.panelLeft.Controls.Add(this.panelSide);
             this.panelLeft.Controls.Add(this.btn_calender);
             this.panelLeft.Controls.Add(this.btn_data);
@@ -86,6 +86,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.btn_move);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -96,6 +97,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel4.Controls.Add(this.btn_minimize);
             this.panel4.Controls.Add(this.btn_close);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -106,7 +108,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel2.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel2.Controls.Add(this.label_time);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -119,7 +121,7 @@
             // 
             this.label_time.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_time.AutoSize = true;
-            this.label_time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label_time.BackColor = System.Drawing.Color.SaddleBrown;
             this.label_time.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_time.ForeColor = System.Drawing.Color.White;
             this.label_time.Location = new System.Drawing.Point(876, 34);
@@ -330,7 +332,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Massage_Fuchs.Properties.Resources.businessman;
+            this.pictureBox1.Image = global::Massage_Fuchs.Properties.Resources.logo__2_;
             this.pictureBox1.Location = new System.Drawing.Point(51, 17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(103, 100);

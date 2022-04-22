@@ -240,7 +240,11 @@
     <None Include="Resources\add.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\turn_off-removebg-preview.png" />
+    <None Include="Resources\turn_off.png" />
     <None Include="Resources\minimize.png" />
+    <Content Include="Resources\logo %282%29.png" />
+    <None Include="Resources\logo %282%291.png" />
     <Content Include="Resources\minus.png" />
     <None Include="Resources\minus1.png" />
   </ItemGroup>

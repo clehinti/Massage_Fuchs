@@ -52,6 +52,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label1.Location = new System.Drawing.Point(57, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 19);
@@ -63,6 +64,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label2.Location = new System.Drawing.Point(403, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 28);
@@ -82,6 +84,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label6.Location = new System.Drawing.Point(67, 288);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 19);
@@ -101,6 +104,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label7.Location = new System.Drawing.Point(429, 116);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(515, 19);
@@ -121,6 +125,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label8.Location = new System.Drawing.Point(50, 205);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 19);
@@ -138,7 +143,7 @@
             // btnsave
             // 
             this.btnsave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnsave.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnsave.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnsave.FlatAppearance.BorderSize = 0;
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -154,7 +159,7 @@
             // btnclear
             // 
             this.btnclear.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnclear.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnclear.BackColor = System.Drawing.Color.Firebrick;
             this.btnclear.FlatAppearance.BorderSize = 0;
             this.btnclear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -174,19 +179,18 @@
             this.txtPostleitzahl.Name = "txtPostleitzahl";
             this.txtPostleitzahl.Size = new System.Drawing.Size(199, 27);
             this.txtPostleitzahl.TabIndex = 3;
-          
             // 
             // lbl_plz
             // 
             this.lbl_plz.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_plz.AutoSize = true;
             this.lbl_plz.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_plz.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbl_plz.Location = new System.Drawing.Point(27, 244);
             this.lbl_plz.Name = "lbl_plz";
             this.lbl_plz.Size = new System.Drawing.Size(96, 19);
             this.lbl_plz.TabIndex = 7;
             this.lbl_plz.Text = "Postleitzahl:";
-           
             // 
             // dpCreate
             // 
@@ -204,6 +208,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label3.Location = new System.Drawing.Point(54, 325);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 19);
@@ -215,7 +220,8 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(54, 361);
+            this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label4.Location = new System.Drawing.Point(80, 359);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 19);
             this.label4.TabIndex = 10;

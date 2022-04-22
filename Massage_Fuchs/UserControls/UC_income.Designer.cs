@@ -34,13 +34,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label_date = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtmade = new System.Windows.Forms.TextBox();
             this.btn_addIncome = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dtgrd = new System.Windows.Forms.DataGridView();
-            this.label_date = new System.Windows.Forms.Label();
             this.timer_time = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -87,6 +87,17 @@
             this.panel1.Size = new System.Drawing.Size(985, 22);
             this.panel1.TabIndex = 4;
             // 
+            // label_date
+            // 
+            this.label_date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_date.AutoSize = true;
+            this.label_date.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label_date.Location = new System.Drawing.Point(853, 3);
+            this.label_date.Name = "label_date";
+            this.label_date.Size = new System.Drawing.Size(0, 19);
+            this.label_date.TabIndex = 2;
+            // 
             // labelTime
             // 
             this.labelTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -100,7 +111,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel5.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel5.Controls.Add(this.txtmade);
             this.panel5.Controls.Add(this.btn_addIncome);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -157,17 +168,6 @@
             this.dtgrd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgrd.Size = new System.Drawing.Size(965, 481);
             this.dtgrd.TabIndex = 0;
-            // 
-            // label_date
-            // 
-            this.label_date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_date.AutoSize = true;
-            this.label_date.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label_date.Location = new System.Drawing.Point(853, 3);
-            this.label_date.Name = "label_date";
-            this.label_date.Size = new System.Drawing.Size(0, 19);
-            this.label_date.TabIndex = 2;
             // 
             // timer_time
             // 
