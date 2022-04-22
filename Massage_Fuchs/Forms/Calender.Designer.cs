@@ -138,6 +138,7 @@ namespace Massage_Fuchs.Forms
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Calender";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calender";

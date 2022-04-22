@@ -41,7 +41,7 @@
             this.label_time.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_time.AutoSize = true;
             this.label_time.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_time.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label_time.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label_time.Location = new System.Drawing.Point(329, 10);
             this.label_time.Name = "label_time";
             this.label_time.Size = new System.Drawing.Size(339, 77);
