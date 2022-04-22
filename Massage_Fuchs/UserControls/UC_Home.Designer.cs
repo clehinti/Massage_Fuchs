@@ -32,6 +32,9 @@
             this.label_time = new System.Windows.Forms.Label();
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            this.dtgrd = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrd)).BeginInit();
             // 
             // label_time
             // 
